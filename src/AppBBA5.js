@@ -5,6 +5,7 @@ import { store } from './Redux/Store';
 import { Routers } from './Routers/Routers';
 import TagManager from 'react-gtm-module';
 import ReactPixel from 'react-facebook-pixel';
+import './Styles/Base/bootstrap.min.scss'
 import './Styles/styles.scss';
 
 const tagManagerArgs = {

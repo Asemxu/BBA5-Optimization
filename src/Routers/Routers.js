@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
@@ -7,7 +8,6 @@ import { PrivateRoutes } from './PrivateRoutes';
 
 import { Publics } from './Publics';
 import { Privates } from './Privates';
-import { DrawerMenu } from '../Components/modals';
 import {
   getCharacters,
   getCities,
@@ -19,6 +19,9 @@ import {
 } from '../Redux/Actions/BBA5/information';
 import { startLogin } from '../Redux/Actions/Auth';
 import ReactGA from 'react-ga';
+
+const DrawerMenu = React.lazy(()=>import('../Components/modals'));
+
 ReactGA.initialize('UA-205928464-1');
 
 export const Routers = () => {

@@ -1,4 +1,5 @@
 import ReactGA from 'react-ga';
+import React , { lazy } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
@@ -7,12 +8,16 @@ import { toggleMenu, toggleModalInfo } from '../../Redux/Actions/UI';
 import { WrapperMain } from '../../Wrappers/WrapperMain';
 import { Header } from '../../Components/Header';
 import { Button } from '../../Components/Buttons';
-import { Information, MiniTour } from '../../Components/modals';
+
+
 import { typesHeaders } from '../../types/ui';
 
 import bone from '../../Images/Decorations/Aditionals/bone.svg';
 import { babyMain } from '../../Images/Decorations/Baby';
 import { useEffect } from 'react';
+
+const Information = lazy(() =>import('../../Components/modals/Information'))
+const MiniTour = lazy(() =>import('../../Components/modals/MiniTour'))
 
 const PageWellcome = () => {
   const {
