@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[59],{175:function(t,n,e){"use strict";e.r(n),n.default=e.p+"static/media/btnStart.53c30772.webp"}}]);
+//# sourceMappingURL=59.7d4d1177.chunk.js.map

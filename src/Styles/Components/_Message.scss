@@ -1,0 +1,33 @@
+.message__error {
+  align-items: center;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6px;
+  margin-top: 0.6px;
+  margin: auto;
+  margin-top: 1rem;
+  max-width: 400px;
+
+  @media screen and (max-width: 576px) {
+    padding: 0 1rem;
+  }
+  &.message {
+    width: auto;
+    height: auto;
+  }
+  i {
+    padding-right: 14px;
+    font-size: 1.3rem;
+  }
+  p {
+    font-family: $font__extraBold;
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: inline;
+    line-height: 1.6rem;
+  }
+  p:first-child {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,88 @@
+/* INSTRUCTION 01 */
+.content__product__start {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  div {
+    align-items: center;
+    background-size: 65% 155%;
+    display: flex;
+    justify-content: center;
+    min-height: 12rem;
+
+    @media screen and (max-width: 768px) {
+      min-height: 10rem;
+    }
+  }
+  img {
+    max-width: 95px;
+    width: 100%;
+    height: auto;
+    @media screen and (max-width: 768px) {
+      max-width: 90px;
+    }
+  }
+}
+
+/* INSTRUCTION 02 */
+.instruction__2__imgs {
+  background: url('../../Images/Decorations/Aditionals/hand.webp') 100% 2% / 48%
+      no-repeat,
+    url('../../Images/Decorations/Aditionals/bgResplandor.webp') center -53% /75%
+      no-repeat;
+
+  img {
+    max-width: 14rem;
+  }
+  @media screen and (max-width: 576px) {
+    background: url('../../Images/Decorations/Aditionals/hand.webp') 100% 6%/49%
+        no-repeat,
+      url('../../Images/Decorations/Aditionals/bgResplandor.webp') center -20%/90%
+        no-repeat;
+  }
+
+  padding-top: 4rem;
+  .buttons {
+    bottom: 3rem;
+  }
+}
+
+/* INSTRUCTION 03 */
+.instruction__3__imgs {
+  min-height: 12rem;
+  position: relative;
+  overflow: hidden;
+  .line {
+    background-color: #ffffff73;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 3rem;
+    margin: auto;
+
+    @media screen and (max-width: 532px) {
+      width: 10rem;
+    }
+  }
+  .button__red {
+    background-color: $red;
+    border-radius: 1rem;
+    padding: 10px 1rem;
+    max-width: 120px;
+    p {
+      color: $white;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+  img {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+
+    @media screen and (max-width: 350px) {
+      max-width: 10rem;
+    }
+  }
+}

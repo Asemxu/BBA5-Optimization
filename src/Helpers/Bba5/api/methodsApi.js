@@ -1,0 +1,15 @@
+export const methodsApi = {
+  getCities: '/cities',
+  registerParent: '/store_parent',
+  editParent: '/edit_parent',
+  registerBaby: '/store_baby',
+  resetPassword: '/resetPassword',
+  changePassword: '/changePassword',
+  login: '/login',
+  types_documents: '/tipo_documentos',
+  characters: '/personajes',
+  validateEmail: '/validateEmail',
+  sorteos: '/sorteos',
+  getTops: '/top',
+  showCode: '/showCode',
+};

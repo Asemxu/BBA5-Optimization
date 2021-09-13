@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[80],{162:function(t,n,s){"use strict";s.r(n),n.default=s.p+"static/media/pista_round.f79d9ab0.webp"}}]);
+//# sourceMappingURL=80.5968e445.chunk.js.map

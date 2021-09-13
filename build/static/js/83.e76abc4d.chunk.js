@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[83],{201:function(t,e,s){"use strict";s.r(e),e.default=s.p+"static/media/sprite_chase.cd917757.webp"}}]);
+//# sourceMappingURL=83.e76abc4d.chunk.js.map

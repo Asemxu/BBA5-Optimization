@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[72],{194:function(e,s,t){"use strict";t.r(s),s.default=t.p+"static/media/message_5.5581d29d.webp"}}]);
+//# sourceMappingURL=72.de2f0a23.chunk.js.map

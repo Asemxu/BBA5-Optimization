@@ -1,0 +1,244 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Eventos en Analytics de Rutas Públicas",
+  "steps": [
+    {
+      "file": "src/Pages/Publics/PageMain.js",
+      "selection": {
+        "start": {
+          "line": 29,
+          "character": 5
+        },
+        "end": {
+          "line": 32,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Portada | Evento: 'Crear Cuenta' o 'Iniciar Sesión'"
+    },
+    {
+      "file": "src/Pages/Publics/PageAccounts.js",
+      "selection": {
+        "start": {
+          "line": 43,
+          "character": 9
+        },
+        "end": {
+          "line": 46,
+          "character": 12
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Registro con Correo'"
+    },
+    {
+      "file": "src/Pages/Publics/PageAccounts.js",
+      "selection": {
+        "start": {
+          "line": 54,
+          "character": 9
+        },
+        "end": {
+          "line": 57,
+          "character": 12
+        }
+      },
+      "description": "Categoría: Iniciar Sesión | Evento: 'Iniciar Sesión con Correo'"
+    },
+    {
+      "file": "src/Pages/Publics/PageAccounts.js",
+      "selection": {
+        "start": {
+          "line": 66,
+          "character": 5
+        },
+        "end": {
+          "line": 71,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Registro con Fb' , Categoría: Iniciar Sesión | Evento: 'Inicio de Sesión con Fb'"
+    },
+    {
+      "file": "src/Hooks/useFormParent.js",
+      "selection": {
+        "start": {
+          "line": 65,
+          "character": 5
+        },
+        "end": {
+          "line": 68,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Datos de Mamí'"
+    },
+    {
+      "file": "src/Hooks/useFormBaby.js",
+      "selection": {
+        "start": {
+          "line": 179,
+          "character": 5
+        },
+        "end": {
+          "line": 182,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Leer Términos y Condiciones', 'Leer Política y Privacidad' y 'Leer Programa Inkaclub.'"
+    },
+    {
+      "file": "src/Hooks/useFormBaby.js",
+      "selection": {
+        "start": {
+          "line": 77,
+          "character": 5
+        },
+        "end": {
+          "line": 80,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Datos de bebé'"
+    },
+    {
+      "file": "src/Pages/Legacy/PageTermsConditions.js",
+      "selection": {
+        "start": {
+          "line": 27,
+          "character": 5
+        },
+        "end": {
+          "line": 30,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Aceptar Términos y Condiciones'"
+    },
+    {
+      "file": "src/Pages/Legacy/PagePrivacyPolicy.js",
+      "selection": {
+        "start": {
+          "line": 17,
+          "character": 5
+        },
+        "end": {
+          "line": 20,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Aceptar Política de Privacidad'"
+    },
+    {
+      "file": "src/Pages/Legacy/PageInkaclubProgramme.js",
+      "selection": {
+        "start": {
+          "line": 16,
+          "character": 5
+        },
+        "end": {
+          "line": 19,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Registro | Evento: 'Aceptar Programa Inkaclub'"
+    },
+    {
+      "file": "src/Hooks/useFormLogin.js",
+      "selection": {
+        "start": {
+          "line": 23,
+          "character": 5
+        },
+        "end": {
+          "line": 26,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Iniciar Sesión | Evento: 'Inicio de Sesión'"
+    },
+    {
+      "file": "src/Forms/FormLogin.js",
+      "selection": {
+        "start": {
+          "line": 30,
+          "character": 5
+        },
+        "end": {
+          "line": 33,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Iniciar Sesión | Evento: 'Crear Cuenta'"
+    },
+    {
+      "file": "src/Forms/FormLogin.js",
+      "selection": {
+        "start": {
+          "line": 37,
+          "character": 5
+        },
+        "end": {
+          "line": 40,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Iniciar Sesión | Evento: 'Recuperar contraseña'"
+    },
+    {
+      "file": "src/Forms/FormPasswordRecovery.js",
+      "selection": {
+        "start": {
+          "line": 27,
+          "character": 5
+        },
+        "end": {
+          "line": 30,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Recuperar contraseña | Evento: 'Solicitar cambio de contraseña'"
+    },
+    {
+      "file": "src/Pages/Publics/PageVerifyEmail.js",
+      "selection": {
+        "start": {
+          "line": 12,
+          "character": 5
+        },
+        "end": {
+          "line": 15,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Recuperar contraseña | Evento: 'Recuperar contraseña de otro correo'"
+    },
+    {
+      "file": "src/Forms/FormPasswordNew.js",
+      "selection": {
+        "start": {
+          "line": 37,
+          "character": 5
+        },
+        "end": {
+          "line": 40,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Crear nueva contraseña | Evento: 'Cambio de contraseña'"
+    },
+    {
+      "file": "src/Forms/FormPasswordNew.js",
+      "selection": {
+        "start": {
+          "line": 61,
+          "character": 5
+        },
+        "end": {
+          "line": 64,
+          "character": 8
+        }
+      },
+      "description": "Categoría: Crear nueva contraseña | Evento: 'Ir al inicio'"
+    }
+  ]
+}

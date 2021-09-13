@@ -1,0 +1,35 @@
+.list__dates {
+  margin-top: 1rem;
+  max-height: 300px;
+  overflow: auto;
+  &.list__big .raffle__information {
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 992px) {
+    margin: 0 2.3rem;
+  }
+  @media screen and (max-width: 350px) {
+    margin: 0 1rem;
+  }
+  .raffle__information {
+    background-color: $white;
+    border-radius: $border_radius_content;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Carousel */
+.rec.rec-dot {
+  box-shadow: none;
+  background-color: $white;
+  width: 1rem;
+  height: 1rem;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 1px 3px #fcdc00;
+  }
+  &.rec-dot_active {
+    background-color: #fcdc00;
+  }
+}

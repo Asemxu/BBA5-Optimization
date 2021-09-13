@@ -1,0 +1,188 @@
+body.ReactModal__Body--open{
+  overflow: hidden;
+}
+.ReactModal__Overlay {
+  max-width: 500px;
+  margin: auto;
+  .parent__btn__bg__primary {
+    margin: 3em auto;
+  }
+}
+.modal {
+  &-minitour {
+    &-Desc {
+      max-width: 300px;
+      margin: auto;
+    }
+    &-account {
+      text-align: center;
+      margin: auto;
+      &-title {
+        color: $yellow__300;
+        margin-top: 20px;
+      }
+    }
+    &-menu {
+      &-icon {
+        margin-left: -20px;
+        position: relative;
+      }
+      &-baby {
+        margin-right: -20px;
+      }
+      &-content {
+        display: flex;
+        gap: 20px;
+        margin-top: 20%;
+        margin-bottom: 5em;
+      }
+      .resplandor:before {
+        width: 10em;
+        height: 10em;
+      }
+    }
+    &-boleta {
+      h3 {
+        text-align: end;
+      }
+      &-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20%;
+        margin-bottom: 5em;
+      }
+      &-baby {
+        margin-left: -20px;
+      }
+      .resplandor {
+        width: 100%;
+      }
+      .resplandor:before {
+        width: 20em;
+        height: 20em;
+      }
+      .parent__btn__bg__secundary {
+        margin: 0px auto;
+      }
+    }
+  }
+  &-drawermenu {
+    position: relative;
+    height: 95vh;
+    width: 80%;
+
+    background-color: #005d9e;
+    margin-left: -20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    // @media (max-width: 768px) {
+    //   max-height: 26rem;
+    // }
+    // @media (max-width: 330px) {
+    //   max-height: 95vh;
+    // }
+
+    header {
+      text-align: right;
+      // margin-bottom: 1em;
+      img {
+        cursor: pointer;
+      }
+    }
+    ul {
+      padding: 0;
+      li {
+        margin-bottom: 1em;
+        -webkit-appearance: none;
+        list-style: none;
+        display: flex;
+        &::before{
+          content: url(../../Images/Decorations/Aditionals/bone_list.svg);
+          margin: auto 0px;
+          margin-right: 0.5em;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 1rem;
+        }
+        
+      }
+    }
+    &::before {
+      content: '';
+      background-color: #0072b5;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      height: 100%;
+      width: 95%;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      z-index: -1;
+    }
+    & .bg__bones {
+      background: url('../../Images/Background/menu/bone_1.webp') 2% 80% / 30%
+          no-repeat,
+        url('../../Images/Background/menu/bone_2.webp') 100% 85% / 40% no-repeat,
+        url('../../Images/Background/menu/bone_3.webp') 15% 100% / 32% no-repeat;
+      padding: 1rem 1rem 0 2rem;
+
+      height: 100%;
+      @media screen and (max-width: 576px) {
+        padding: 1rem 1rem 0 1rem;
+      }
+    }
+  }
+  &-informe {
+    background: #fff;
+    color: $gray__dark;
+    text-align: center;
+    border-radius: 25px;
+    padding: 2em;
+    margin-bottom: 20px;
+    h2 {
+      color: #04a6e1;
+      font-weight: bold;
+    }
+    p {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 1em;
+    }
+    .btn__bg__secundary {
+      margin-top: 2em;
+      margin-bottom: -60px;
+    }
+  }
+}
+.resplandor {
+  position: relative;
+  width: fit-content;
+}
+.resplandor:before {
+  content: '';
+  position: absolute;
+  background: url('../../Images/Decorations/Aditionals/bgResplandor.webp');
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: resplandor 5s linear infinite;
+}
+
+@keyframes resplandor {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

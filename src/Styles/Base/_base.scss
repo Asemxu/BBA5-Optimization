@@ -1,0 +1,337 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: $white;
+  background: #004a87;
+}
+body {
+  font-family: $font__extraBold;
+  background: url('../../Images/Background/bg_desktop.webp') center center /
+    cover no-repeat;
+  margin:0px;
+}
+
+/* __________________________________________  */
+/* ------------------ SCROLL ----------------  */
+/* __________________________________________  */
+
+body::-webkit-scrollbar,
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb,
+.scrollbar::-webkit-scrollbar-thumb {
+  background: $cyan;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: darken($color: $cyan, $amount: 10);
+}
+
+body::-webkit-scrollbar-thumb:active,
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: darken($color: $cyan, $amount: 10);
+}
+body::-webkit-scrollbar-track,
+.scrollbar::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+/* __________________________________________  */
+/* ----------- CONTAINER MAIN ----------------  */
+/* __________________________________________  */
+
+.container__main {
+  background: url('../../Images/Background/bg.webp') bottom center / cover;
+  grid-template-rows: 5rem 1fr 12rem;
+  margin: auto;
+  max-width: 500px;
+  min-height: 100vh;
+  padding-bottom: 0rem;
+  overflow: hidden;
+
+
+  &.rows__2 {
+    grid-template-rows: 5rem 1fr;
+    @media screen and (max-width: 576px) {
+      grid-template-rows: 5rem 1fr;
+    }
+  }
+  &.row__logos {
+    grid-template-rows: 5rem 1fr 4.5rem;
+  }
+  @media screen and (max-width: 576px) {
+    grid-template-rows: 5rem 1fr 9rem;
+  }
+}
+.content__main {
+  padding: 1rem 3rem;
+  &.height__100 {
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 992px) {
+      justify-content: flex-end;
+    }
+    @media screen and (min-height: 1024px) {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
+}
+
+/* AVATARS ## */
+.container__main {
+  &.row__logos .logos > img {
+    max-width: 50px;
+    width: 100%;
+  }
+  &.row__logos .logos > img:first-child {
+    max-width: 160px;
+  }
+}
+.avatars img {
+  max-width: 8rem;
+  max-height: 9rem;
+  @media screen and (max-width: 576px) {
+    max-height: 8rem;
+  }
+  &.w-100 {
+    max-width: 15rem;
+    max-height: 11rem;
+
+    @media screen and (max-width: 576px) {
+      max-width: 13rem;
+      max-height: 10rem;
+    }
+  }
+  &.w-100-2 {
+    max-width: 12rem;
+    max-height: 11rem;
+
+    @media screen and (max-width: 576px) {
+      max-width: 11rem;
+      max-height: 10rem;
+    }
+  }
+}
+
+/* CONTENT AVATARS */
+.main__content__avatars {
+  position: relative;
+  max-width: 350px;
+  text-align: center;
+  margin: auto;
+  .logo__paw {
+    max-width: 130px;
+    width: 100%;
+  }
+  .img__team {
+    max-width: 330px;
+    position: relative;
+    top: -2.2rem;
+  }
+}
+
+/* AWARDS */
+.grid__awards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  padding: 0 2rem;
+  .award {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: grid;
+    place-items: center;
+    p {
+      margin-top: 10px;
+    }
+    .award-image {
+      width: auto;
+      height: 60%;
+      max-height: 5rem;
+      position: absolute;
+      z-index: 1;
+      top: 1em;
+    }
+    .white-image {
+      border-radius: 1rem;
+      width: 100%;
+      height: 7rem;
+      max-width: 200px;
+      margin: auto;
+      background: #fff;
+    }
+    &:nth-child(1) .white-image {
+      transform: perspective(200px) rotateX(357deg) rotateY(343deg);
+    }
+    &:nth-child(2) .white-image {
+      transform: perspective(200px) rotateX(357deg) rotateY(-343deg);
+    }
+    &:nth-child(3) {
+      // .award-image {
+      //   width: 30%;
+      // }
+      .white-image {
+        transform: perspective(200px) rotateX(357deg) rotateY(-343deg);
+      }
+    }
+    &:nth-child(4) .white-image {
+      transform: perspective(200px) rotateX(357deg) rotateY(343deg);
+    }
+    &:nth-child(5) {
+      grid-column: span 2;
+      // .award-image {
+      //   width: 20%;
+      // }
+      .white-image {
+        width: 50%;
+        transform: perspective(200px) rotateX(15deg);
+      }
+    }
+  }
+}
+
+.raffle-awards {
+  .award {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-top: 1em;
+    .award-image {
+      width: auto;
+      height: 60%;
+      position: absolute;
+      z-index: 1;
+      margin-top: -1.5rem;
+    }
+    .white-image {
+      border-radius: 1rem;
+      width: 100%;
+      height: 7rem;
+      max-width: 200px;
+      margin: auto;
+      background: #fff;
+    }
+    .white-image {
+      transform: perspective(200px) rotateX(357deg) rotateY(343deg);
+    }
+  }
+}
+
+/* __________________________________________  */
+/* ---------- CONTENT TITLES  ----------------  */
+/* __________________________________________  */
+
+div[class^='content__title'] {
+  color: $white;
+  font-family: $font__extraBold;
+  text-align: center;
+}
+div[class^='content__title'] img {
+  max-width: 60px;
+  width: 100%;
+  &.img__big {
+    max-width: 140px;
+    margin-bottom: 1rem;
+  }
+}
+.content__title {
+  padding: 0 3rem;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 3.4rem;
+  }
+}
+
+.content__title__sm {
+  padding: 0 1rem;
+  @media screen and (max-width: 992px) {
+    padding: 0 1.4rem;
+  }
+}
+
+/* __________________________________________  */
+/* ------- CONTENT DESCRIPTION ----------------  */
+/* __________________________________________  */
+
+.content__description {
+  padding: 0 1.4rem;
+  &.description__md p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  &.description__lg p {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 0 3rem;
+  }
+}
+.content__description p {
+  color: $white;
+  font-family: $font__extraBold;
+  font-size: 1rem;
+  @media screen and (max-width: 350px) {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+
+/* __________________________________________  */
+/* ------------------ CONTENT BODY ---------  */
+/* __________________________________________  */
+
+.content__body {
+  color: $white;
+  padding: 0 1.2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  @media screen and (max-width: 768px) {
+    padding: 0 2.2rem;
+  }
+}
+.content__body p {
+  font-family: $font__extraBold;
+  font-size: 0.9rem;
+}
+
+/* __________________________________________  */
+/* -------------- CONTENT LOGO ----------------  */
+/* __________________________________________  */
+
+.content__logo__main {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.content__logo__main img {
+  max-width: 250px;
+  @media screen and (max-width: 350px) {
+    max-width: 200px;
+  }
+}
+
+.content__center {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}

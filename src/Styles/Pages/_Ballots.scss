@@ -1,0 +1,98 @@
+.content__list__ballots {
+  max-width: 240px;
+  margin: 1rem auto;
+  width: 100%;
+
+  &.list__big {
+    max-height: 180px;
+    overflow: auto;
+  }
+  &.list__big .ballot {
+    margin-right: 0.6rem;
+  }
+  .ballot {
+    background-color: $white;
+    padding: 0.7rem 1.5rem;
+    border-radius: $border_radius_content;
+    margin-top: 1rem;
+  }
+  .ballot:first-child {
+    margin-top: 0.5rem;
+  }
+}
+
+.imgs__pharmacies,
+.buttons__pharmacies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.imgs__pharmacies {
+  &.img__activated {
+    grid-template-columns: 1fr;
+    img {
+      max-width: 20rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+    margin: auto;
+  }
+  @media screen and (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+  img {
+    filter: grayscale(1);
+    height: auto;
+    margin: auto;
+    max-width: 12rem;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      max-width: 9rem;
+      min-height: 9rem;
+    }
+    &.activated {
+      filter: grayscale(0);
+    }
+  }
+}
+.buttons__pharmacies {
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 310px;
+  }
+  & img {
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: auto;
+    max-width: 10rem;
+    min-height: 1rem;
+    object-fit: contain;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 9rem;
+    }
+
+    &:hover,
+    &.activated {
+      background-color: $white;
+      border: 4px solid $white;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.page__ballots .parent__title__gilded {
+  height: auto;
+  p {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+}

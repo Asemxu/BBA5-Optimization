@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[85],{202:function(t,s,e){"use strict";e.r(s),s.default=e.p+"static/media/sprite_marshall.08d45ba1.webp"}}]);
+//# sourceMappingURL=85.b72541c5.chunk.js.map

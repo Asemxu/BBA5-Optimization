@@ -1,0 +1,90 @@
+.content__legacy {
+  max-height: 380px;
+  overflow: auto;
+  margin: 0 0.2rem;
+  @media screen and (max-width: 552px) {
+    margin: 0 0rem;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  .description {
+    font-size: 0.8rem;
+    font-family: $font__light;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .legacy__item {
+    text-align: left;
+    .legacy__subtitle {
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+      padding-top: 0.5rem;
+      @media screen and (max-width: 552px) {
+        padding-left: 1rem;
+      }
+    }
+    ol {
+      padding-left: 1rem;
+      li {
+        font-family: $font__extraBold;
+        text-transform: uppercase;
+      }
+    }
+    p,
+    li {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      font-family: $font__light;
+    }
+    .bold {
+      font-family: $font__extraBold;
+    }
+    a {
+      color: $yellow;
+      font-family: $font__extraBold;
+      word-break: break-word;
+    }
+  }
+}
+
+.adward-table {
+  div {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    outline: 1.2px solid $white;
+    text-align: center;
+    padding: 5px;
+  }
+  .title__table h3 {
+    font-size: 0.7rem;
+    @media screen and (max-width: 952px) {
+      font-size: 0.6rem;
+    }
+    margin: 0;
+  }
+}
+
+.draw__dates {
+  .line {
+    font-family: $font__extraBold;
+    border-bottom: 2px solid currentColor;
+  }
+}
+.table__products {
+  .header__titles p {
+    font-size: 1rem;
+  }
+
+  p {
+    padding: 5px;
+    outline: 2px solid currentColor;
+  }
+}

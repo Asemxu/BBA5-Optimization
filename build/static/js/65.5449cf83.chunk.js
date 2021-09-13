@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[65],{171:function(t,n,s){"use strict";s.r(n),n.default=s.p+"static/media/fondo_marshall.0f9da8c2.webp"}}]);
+//# sourceMappingURL=65.5449cf83.chunk.js.map

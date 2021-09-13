@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[87],{206:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/sprite_rubble.9a2e4470.webp"}}]);
+//# sourceMappingURL=87.1eec0faf.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[89],{208:function(e,t,s){"use strict";s.r(t),t.default=s.p+"static/media/star_check.de2ecb7d.webp"}}]);
+//# sourceMappingURL=89.a14b6018.chunk.js.map

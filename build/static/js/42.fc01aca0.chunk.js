@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[42],{177:function(t,e,n){"use strict";n.r(e),e.default=n.p+"static/media/arrow_left.bed0583a.webp"}}]);
+//# sourceMappingURL=42.fc01aca0.chunk.js.map
