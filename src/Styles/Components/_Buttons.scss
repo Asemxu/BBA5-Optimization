@@ -20,7 +20,7 @@
 button.btn {
   font-family: $font__extraBold;
   font-weight: bold;
-  transition: background-color 0.8s ease;
+  transition: background-color 100ms ease;
   box-shadow: none !important;
   outline: none;
   white-space: nowrap;
@@ -100,7 +100,7 @@ div[class^='parent__btn__bg__'] {
       margin: auto;
       max-width: 300px;
       padding: 1.2rem 3.5rem;
-      transition: background-color 0.8s ease;
+      transition: background-color 100ms ease;
       @media screen and (max-width: 576px) {
         padding: 1.2rem 2.2rem;
       }
