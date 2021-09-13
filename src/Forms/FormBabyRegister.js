@@ -51,7 +51,7 @@ import { months } from '../data';
       </div>
       <div className="content__input">
         <select
-          className="form-select"
+          className="form-select w-100"
           name="gender"
           value={gender}
           onChange={handleGenderChange}

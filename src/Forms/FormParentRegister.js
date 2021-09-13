@@ -223,5 +223,4 @@ import { Spinner } from '../Components/Spinner';
     </form>
   );
 };
-
-export default FormParentRegister
+ export default FormParentRegister
