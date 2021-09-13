@@ -5,9 +5,8 @@ import { WrapperMain } from '../../Wrappers/WrapperMain';
 import { Header } from '../../Components/Header';
 import { typesHeaders } from '../../types/ui';
 
-import { FormAddBallot } from '../../Forms/FormAddBallot';
-
-export const PageAddBallot = () => {
+const  FormAddBallot  = React.lazy( ()=>import('../../Forms/FormAddBallot'));
+const PageAddBallot = () => {
   const history = useHistory();
 
   return (
@@ -27,3 +26,5 @@ export const PageAddBallot = () => {
     </WrapperMain>
   );
 };
+
+export default PageAddBallot

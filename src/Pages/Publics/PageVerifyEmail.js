@@ -5,7 +5,7 @@ import { Button } from '../../Components/Buttons';
 import { Header } from '../../Components/Header';
 import { typesHeaders, typesFooterAvatars } from '../../types/ui';
 
-export const PageVerifyEmail = () => {
+const PageVerifyEmail = () => {
   const history = useHistory();
 
   const goPagePasswordRecovery = () => {
@@ -52,3 +52,5 @@ export const PageVerifyEmail = () => {
     </WrapperMain>
   );
 };
+
+export default PageVerifyEmail

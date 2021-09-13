@@ -12,7 +12,7 @@ import { Spinner } from '../Components/Spinner';
 import { ErrorMessage } from '../Components/messages/ErrorMessage';
 import { months } from '../data';
 
-export const FormBabyRegister = () => {
+ const FormBabyRegister = () => {
   const dispatch = useDispatch();
 
   const {
@@ -176,3 +176,4 @@ export const FormBabyRegister = () => {
     </form>
   );
 };
+export default FormBabyRegister

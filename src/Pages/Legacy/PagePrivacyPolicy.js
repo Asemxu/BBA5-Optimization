@@ -9,7 +9,7 @@ import { Header } from '../../Components/Header';
 import { typesHeaders } from '../../types/ui';
 import { privacy } from '../../data/legacys/privacy';
 
-export const PagePrivacyPolicy = () => {
+const PagePrivacyPolicy = () => {
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -63,3 +63,5 @@ export const PagePrivacyPolicy = () => {
     </WrapperMain>
   );
 };
+
+export default PagePrivacyPolicy

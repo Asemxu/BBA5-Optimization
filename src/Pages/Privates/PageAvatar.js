@@ -7,7 +7,7 @@ import { Button } from '../../Components/Buttons';
 import { Header } from '../../Components/Header';
 import { typesHeaders } from '../../types/ui';
 
-export const PageAvatar = () => {
+const PageAvatar = () => {
   const {
     selected: { avatar },
   } = useSelector((state) => state.ui);
@@ -57,3 +57,5 @@ export const PageAvatar = () => {
     </WrapperMain>
   );
 };
+
+export default PageAvatar

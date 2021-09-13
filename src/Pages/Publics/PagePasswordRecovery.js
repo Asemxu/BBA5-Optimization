@@ -7,7 +7,7 @@ import { Header } from '../../Components/Header';
 import { FormPasswordRecovery } from '../../Forms';
 import { typesHeaders, typesFooterAvatars } from '../../types/ui';
 
-export const PagePasswordRecovery = () => {
+const PagePasswordRecovery = () => {
   const history = useHistory();
 
   const {
@@ -35,3 +35,5 @@ export const PagePasswordRecovery = () => {
     </WrapperMain>
   );
 };
+
+export default PagePasswordRecovery

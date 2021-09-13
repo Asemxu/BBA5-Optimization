@@ -6,7 +6,7 @@ import { typesFooterAvatars, typesHeaders } from '../../types/ui';
 import { ChaseSkye } from '../../Images/Decorations/Avatars';
 import { useHistory } from 'react-router-dom';
 
-export const PageRecoveryConfirm = () => {
+const PageRecoveryConfirm = () => {
   const { push } = useHistory();
 
   const goPageHome = () => {
@@ -44,3 +44,5 @@ export const PageRecoveryConfirm = () => {
     </WrapperMain>
   );
 };
+
+export default PageRecoveryConfirm

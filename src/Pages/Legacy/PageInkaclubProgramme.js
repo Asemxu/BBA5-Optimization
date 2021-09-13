@@ -8,7 +8,7 @@ import { Button } from '../../Components/Buttons';
 import { Header } from '../../Components/Header';
 import { typesHeaders } from '../../types/ui';
 
-export const PageInkaclubProgramme = () => {
+const PageInkaclubProgramme = () => {
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -102,3 +102,5 @@ export const PageInkaclubProgramme = () => {
     </WrapperMain>
   );
 };
+
+export default PageInkaclubProgramme

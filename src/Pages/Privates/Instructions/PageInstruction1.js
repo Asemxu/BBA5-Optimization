@@ -7,7 +7,7 @@ import { Award, Star } from '../../../Images/Decorations/Aditionals';
 import { typesHeaders } from '../../../types/ui';
 import { WrapperMain } from '../../../Wrappers/WrapperMain';
 
-export const PageInstruction1 = () => {
+const PageInstruction1 = () => {
   const history = useHistory();
 
   const nextPage = () => {
@@ -43,3 +43,4 @@ export const PageInstruction1 = () => {
     </WrapperMain>
   );
 };
+export default PageInstruction1

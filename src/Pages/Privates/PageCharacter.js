@@ -11,7 +11,7 @@ import { Spinner } from '../../Components/Spinner';
 import { typesHeaders } from '../../types/ui';
 import { ErrorMessage } from '../../Components/messages/ErrorMessage';
 
-export const PageCharacter = () => {
+const PageCharacter = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const {
@@ -92,3 +92,4 @@ export const PageCharacter = () => {
     </WrapperMain>
   );
 };
+export default PageCharacter

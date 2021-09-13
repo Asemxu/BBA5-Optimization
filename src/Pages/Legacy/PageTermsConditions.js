@@ -19,7 +19,7 @@ import {
 } from '../../Components/legacy/terms/parts';
 import { ProductsTable } from '../../Components/legacy/terms/tables/ProductsTable';
 
-export const PageTermsConditions = () => {
+const PageTermsConditions = () => {
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -60,3 +60,5 @@ export const PageTermsConditions = () => {
     </WrapperMain>
   );
 };
+
+export default PageTermsConditions

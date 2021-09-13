@@ -8,7 +8,7 @@ import { TitleGilded } from '../../Components/TitleGilded';
 import { Ballots } from '../../Components/ballots/Ballots';
 import { typesHeaders } from '../../types/ui';
 
-export const PageBallots = () => {
+const PageBallots = () => {
   const history = useHistory();
 
   const changePage = (url, page) => {
@@ -53,3 +53,5 @@ export const PageBallots = () => {
     </WrapperMain>
   );
 };
+
+export default PageBallots

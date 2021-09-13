@@ -1,11 +1,10 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { useSelector } from 'react-redux';
-import { PageAvatars } from './PageAvatars';
-import { PageAwards } from './PageAwards';
-import { PageWellcome } from './PageWellcome';
-
-export const PageMain = () => {
+import  PageAvatars  from './PageAvatars';
+import  PageAwards  from './PageAwards';
+import  PageWellcome  from './PageWellcome';
+ const PageMain = () => {
   const {
     logged: { num, registerStep },
   } = useSelector((state) => state.auth);
@@ -23,3 +22,4 @@ export const PageMain = () => {
     </Fragment>
   );
 };
+export default PageMain

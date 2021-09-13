@@ -10,7 +10,7 @@ import { StarsBlue } from '../../Images/Decorations/Aditionals';
 import { useSelector } from 'react-redux';
 import { Spinner } from '../../Components/Spinner';
 
-export const PageRanking = () => {
+const PageRanking = () => {
   const history = useHistory();
   const {
     tops: { loading, my_top, list },
@@ -47,3 +47,4 @@ export const PageRanking = () => {
     </WrapperMain>
   );
 };
+export default PageRanking

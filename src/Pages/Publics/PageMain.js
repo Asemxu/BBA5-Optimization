@@ -11,7 +11,7 @@ import { logoBBA } from '../../Images/Logos';
 import { typesHeaders } from '../../types/ui';
 import { selectedMainButton } from '../../Redux/Actions/UI';
 
-export const PageMain = () => {
+const PageMain = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const { code } = useParams();
@@ -62,3 +62,6 @@ export const PageMain = () => {
     </WrapperMain>
   );
 };
+
+
+export default PageMain

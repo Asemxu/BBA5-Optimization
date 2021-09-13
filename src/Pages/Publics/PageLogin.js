@@ -1,13 +1,15 @@
-import React from 'react';
+import React ,{ lazy } from 'react';
 import { Redirect, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import { WrapperMain } from '../../Wrappers/WrapperMain';
 import { Header } from '../../Components/Header';
-import { FormLogin } from '../../Forms';
 import { typesHeaders } from '../../types/ui';
 
-export const PageLogin = () => {
+const FormLogin = lazy(() => import('../../Forms/FormLogin'));
+
+
+const PageLogin = () => {
   const history = useHistory();
   const {
     selected: { isRegisterBtn },
@@ -30,3 +32,5 @@ export const PageLogin = () => {
     </WrapperMain>
   );
 };
+
+export default PageLogin

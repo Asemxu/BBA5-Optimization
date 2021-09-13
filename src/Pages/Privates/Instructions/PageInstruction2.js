@@ -7,7 +7,7 @@ import { Header } from '../../../Components/Header';
 import { typesHeaders } from '../../../types/ui';
 import { ArrowTop } from '../../../Images/Decorations/Aditionals';
 
-export const PageInstruction2 = () => {
+const PageInstruction2 = () => {
   const history = useHistory();
 
   const nextPage = (_) => {
@@ -49,3 +49,4 @@ export const PageInstruction2 = () => {
     </WrapperMain>
   );
 };
+export default PageInstruction2

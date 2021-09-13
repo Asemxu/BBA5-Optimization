@@ -8,7 +8,7 @@ import { Products } from '../../Components/products/Products';
 import { useProducts } from '../../Hooks';
 import { Spinner } from '../../Components/Spinner';
 
-export const PageProducts = () => {
+const PageProducts = () => {
   const history = useHistory();
   const { products, isLoading } = useProducts();
 
@@ -30,3 +30,4 @@ export const PageProducts = () => {
     </WrapperMain>
   );
 };
+export default PageProducts

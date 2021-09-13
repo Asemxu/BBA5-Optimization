@@ -9,7 +9,7 @@ import { Spinner } from '../Components/Spinner';
 import { resetPassword } from '../Redux/Actions/Auth';
 import { useDispatch } from 'react-redux';
 
-export const FormPasswordRecovery = () => {
+const FormPasswordRecovery = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
@@ -74,3 +74,5 @@ export const FormPasswordRecovery = () => {
     </form>
   );
 };
+
+export default FormPasswordRecovery

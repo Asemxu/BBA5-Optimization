@@ -14,7 +14,7 @@ import {
 } from '../../Redux/Actions/BBA5/information';
 import { Spinner } from '../../Components/Spinner';
 
-export const PageBallotMessage = () => {
+const PageBallotMessage = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const {
@@ -109,3 +109,5 @@ export const PageBallotMessage = () => {
     </WrapperMain>
   );
 };
+
+export default PageBallotMessage

@@ -27,7 +27,7 @@ import { ErrorMessage } from '../../Components/messages/ErrorMessage';
 function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
-export const PageAccounts = () => {
+const PageAccounts = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   let query = useQuery();
@@ -176,3 +176,6 @@ export const PageAccounts = () => {
     </WrapperMain>
   );
 };
+
+
+export default PageAccounts

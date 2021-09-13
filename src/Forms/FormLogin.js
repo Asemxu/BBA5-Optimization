@@ -8,7 +8,7 @@ import { Spinner } from '../Components/Spinner';
 import { registerWith } from '../Redux/Actions/UI';
 import { useDispatch } from 'react-redux';
 
-export const FormLogin = () => {
+const FormLogin = () => {
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -89,3 +89,5 @@ export const FormLogin = () => {
     </form>
   );
 };
+
+export default FormLogin

@@ -8,7 +8,7 @@ import { Spinner } from '../Components/Spinner';
 import { ErrorMessage } from '../Components/messages/ErrorMessage';
 import { useBallots } from '../Hooks/useBallots';
 
-export const FormAddBallot = () => {
+const FormAddBallot = () => {
   const [activated, setActivated] = useState('');
   const [ballot, setBallot] = useState('');
   const { activateBallot, errorMsg, isLoading } = useBallots();
@@ -108,3 +108,5 @@ export const FormAddBallot = () => {
     </Fragment>
   );
 };
+
+export default FormAddBallot

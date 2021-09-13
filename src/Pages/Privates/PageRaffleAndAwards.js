@@ -11,7 +11,7 @@ import { typesHeaders } from '../../types/ui';
 import { useSelector } from 'react-redux';
 import { Spinner } from '../../Components/Spinner';
 
-export const PageRaffleAndAwards = () => {
+ const PageRaffleAndAwards = () => {
   const history = useHistory();
   const {
     drawerDates: { loading, data },
@@ -44,3 +44,4 @@ export const PageRaffleAndAwards = () => {
     </WrapperMain>
   );
 };
+export default PageRaffleAndAwards

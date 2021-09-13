@@ -7,7 +7,7 @@ import { FormPasswordNew } from '../../Forms';
 import { Bone } from '../../Images/Decorations/Aditionals';
 import { typesHeaders, typesFooterAvatars } from '../../types/ui';
 
-export const PagePasswordNew = () => {
+const PagePasswordNew = () => {
   return (
     <WrapperMain showAvatars nameAvatars={typesFooterAvatars.chase}>
       <Header name={typesHeaders.main} />
@@ -21,3 +21,5 @@ export const PagePasswordNew = () => {
     </WrapperMain>
   );
 };
+
+export default PagePasswordNew

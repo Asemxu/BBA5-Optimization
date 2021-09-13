@@ -15,7 +15,7 @@ import {
   casita,
 } from '../../Images/Decorations/awards';
 
-export const PageAwards = () => {
+const PageAwards = () => {
   const dispatch = useDispatch();
 
   const goNext = () => {
@@ -78,3 +78,5 @@ export const PageAwards = () => {
     </WrapperMain>
   );
 };
+
+export default PageAwards

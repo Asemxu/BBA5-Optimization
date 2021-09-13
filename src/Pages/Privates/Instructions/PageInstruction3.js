@@ -8,7 +8,7 @@ import { Button } from '../../../Components/Buttons';
 import { Hand } from '../../../Images/Decorations/Aditionals';
 import { useSelector } from 'react-redux';
 
-export const PageInstruction3 = () => {
+const PageInstruction3 = () => {
   const history = useHistory();
   const { selected } = useSelector((state) => state.ui);
 
@@ -55,3 +55,6 @@ export const PageInstruction3 = () => {
     </WrapperMain>
   );
 };
+
+
+export default PageInstruction3

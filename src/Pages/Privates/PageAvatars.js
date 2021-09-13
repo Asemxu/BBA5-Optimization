@@ -9,7 +9,7 @@ import { Team } from '../../Images/Decorations/Aditionals';
 import { logoPaw2 } from '../../Images/Logos';
 import { typesFooterAvatars, typesHeaders } from '../../types/ui';
 
-export const PageAvatars = () => {
+const PageAvatars = () => {
   const dispatch = useDispatch();
 
   const goNext = () => {
@@ -48,3 +48,5 @@ export const PageAvatars = () => {
     </WrapperMain>
   );
 };
+
+export default PageAvatars

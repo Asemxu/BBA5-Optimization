@@ -14,7 +14,7 @@ function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
 
-export const PageShare = () => {
+const PageShare = () => {
   let query = useQuery();
   const dispatch = useDispatch();
   const [code, setCode] = useState('');
@@ -97,3 +97,4 @@ export const PageShare = () => {
     </WrapperMain>
   );
 };
+export default PageShare

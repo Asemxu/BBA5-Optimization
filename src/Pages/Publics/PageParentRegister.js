@@ -6,7 +6,7 @@ import { FormParentRegister } from '../../Forms';
 import { typesHeaders } from '../../types/ui';
 import { useSelector } from 'react-redux';
 
-export const PageParentRegister = () => {
+const PageParentRegister = () => {
   const history = useHistory();
   const {
     selected: { isRegisterBtn },
@@ -28,3 +28,5 @@ export const PageParentRegister = () => {
     </WrapperMain>
   );
 };
+
+export default PageParentRegister

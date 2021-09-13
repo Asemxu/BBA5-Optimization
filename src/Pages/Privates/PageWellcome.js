@@ -14,7 +14,7 @@ import bone from '../../Images/Decorations/Aditionals/bone.svg';
 import { babyMain } from '../../Images/Decorations/Baby';
 import { useEffect } from 'react';
 
-export const PageWellcome = () => {
+const PageWellcome = () => {
   const {
     logged: { num, registerStep },
   } = useSelector((state) => state.auth);
@@ -110,3 +110,4 @@ export const PageWellcome = () => {
     </WrapperMain>
   );
 };
+export default PageWellcome

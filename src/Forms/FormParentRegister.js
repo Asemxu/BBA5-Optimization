@@ -9,7 +9,7 @@ import { Button } from '../Components/Buttons';
 import { ErrorMessage } from '../Components/messages/ErrorMessage';
 import { Spinner } from '../Components/Spinner';
 
-export const FormParentRegister = () => {
+const FormParentRegister = () => {
   const { cities, typesDocs } = useSelector((state) => state.information);
   const {
     selected: { registerWith },
@@ -223,3 +223,5 @@ export const FormParentRegister = () => {
     </form>
   );
 };
+
+export default FormParentRegister

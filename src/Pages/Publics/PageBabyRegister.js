@@ -7,7 +7,7 @@ import { FormBabyRegister } from '../../Forms';
 import { typesHeaders } from '../../types/ui';
 import { useSelector } from 'react-redux';
 
-export const PageBabyRegister = () => {
+ const PageBabyRegister = () => {
   const history = useHistory();
 
   const {
@@ -30,3 +30,5 @@ export const PageBabyRegister = () => {
     </WrapperMain>
   );
 };
+
+export default PageBabyRegister

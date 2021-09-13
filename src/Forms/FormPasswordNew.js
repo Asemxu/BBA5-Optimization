@@ -10,7 +10,7 @@ import { Spinner } from '../Components/Spinner';
 import { changePassword } from '../Redux/Actions/Auth';
 import { useDispatch } from 'react-redux';
 
-export const FormPasswordNew = () => {
+const FormPasswordNew = () => {
   const { token } = useParams();
   const dispatch = useDispatch();
   const history = useHistory();
@@ -119,3 +119,5 @@ export const FormPasswordNew = () => {
     </form>
   );
 };
+
+export default FormPasswordNew
