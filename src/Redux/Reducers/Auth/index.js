@@ -17,7 +17,7 @@ const initialState = {
   loggedIn: false,
   logged: {
     num: 0,
-    registerStep: 0,
+    registerStep: 5,
   },
 };
 
