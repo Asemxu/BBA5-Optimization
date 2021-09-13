@@ -1,0 +1,134 @@
+.score{
+  background:no-repeat url('../../Pages/Privates/Game/assets/bg_score.webp');
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top:10px;
+  width: 100px;
+  height: 90px;
+  justify-content: center;
+  right:10px;
+  font-size:22.5px;
+}
+
+
+.container__game {
+  background: url('../../Images/Background/bg.webp') bottom center / cover;
+  grid-template-rows: 5rem 1fr 12rem;
+  margin: auto;
+  max-width: 500px;
+  height: 100%;
+  padding-bottom: 0rem;
+  overflow: hidden;
+}
+
+#finalizar2{
+    width:100px;
+    position:absolute;
+    height:100px;
+    background-color: red;
+    font-family:  url('../../Fonts/crossten-extrabold-webfont.woff') format('woff');
+    font-weight: Bold;
+}
+
+
+.message{
+  width:200px;
+  height: 125px;
+  object-fit:cover;
+  background-repeat: no-repeat;
+  top:0;
+  z-index:1000000;
+  opacity:1;
+  display:block;
+  left:-200px;
+  transition: all 3000ms;
+  visibility: visible;
+}
+.show{
+  left:0;
+}
+
+.hide{
+  left:-200px
+}
+.message_1{
+  background-image: url(../../Pages/Privates/Game/assets/message_1.webp) ;
+}
+
+.message_2{
+background-image: url(../../Pages/Privates/Game/assets/message_2.webp) ;
+}
+.message_3{
+background-image: url(../../Pages/Privates/Game/assets/message_3.webp) ;
+
+}
+.message_4{
+background-image: url(../../Pages/Privates/Game/assets/message_4.webp) ;
+
+}
+.message_5{
+background-image: url(../../Pages/Privates/Game/assets/message_5.webp) ;
+
+}
+.message_6{
+background-image: url(../../Pages/Privates/Game/assets/message_6.webp) ;
+}
+
+.message_score{
+  width: 75px;
+  height: 50px;
+  top:40%;
+  left:48%;
+  opacity: 0;
+  background-size: cover;
+  background-image: url(../../Pages/Privates/Game/assets/pluscinco.webp);
+  transition:all 500ms;
+}
+
+.message_checkpoint{
+  width: 120px;
+  height: 75px;
+  opacity: 0;
+  top:40%;
+  left:48%;
+  background-size: cover;
+  background-image: url(../../Pages/Privates/Game/assets/plusten.webp);
+  transition:all 750ms;
+}
+
+.show_points{
+  top:35%;
+  opacity:1;  
+  transition:all 500ms;
+}
+.stopMusic{
+  background-image: url(../../Pages/Privates/Game/assets/bg/stopMusic.webp);
+  width: 4.3rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  float: right;
+  right: 0;
+  margin-right: 1.5rem;
+  margin-top: 7rem;
+}
+.playMusic{
+  background-image: url(../../Pages/Privates/Game/assets/bg/playMusic.webp);
+  width: 4.3rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  float: right;
+  right: 0;
+  margin-right: 1.5rem;
+  margin-top: 7rem;
+}
+.d_none{
+  display: none;
+}
+.d_block{
+  display: block;
+}
+.d_flex{
+  display: flex;
+}

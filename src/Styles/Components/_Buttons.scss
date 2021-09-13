@@ -1,0 +1,138 @@
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+  div[class^='parent__btn__bg__'] {
+    margin-top: 1.4rem;
+  }
+  & img {
+    cursor: pointer;
+    max-width: 220px;
+    @media screen and (max-width: 350px) {
+      max-width: 170px;
+      width: 100%;
+    }
+  }
+}
+
+button.btn {
+  font-family: $font__extraBold;
+  font-weight: bold;
+  transition: background-color 0.8s ease;
+  box-shadow: none !important;
+  outline: none;
+  white-space: nowrap;
+}
+
+div[class^='parent__btn__bg__'] {
+  height: 100%;
+  max-height: 150px;
+  max-width: 290px;
+  perspective: 100px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  div[class^='btn__bg__'] {
+    background: $gilded;
+    border-radius: $border_radius_btn;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(8deg);
+
+    @media screen and (max-width: 350px) {
+      max-width: 200px;
+    }
+
+    button {
+      border-radius: $border_radius_btn;
+      border: 0;
+      font-family: $font__extraBold;
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 1rem 0.6rem;
+      margin: auto;
+      transform-style: preserve-3d;
+      width: 100%;
+      @media screen and (max-width: 350px) {
+        font-size: 1.1rem;
+      }
+    }
+    button.btn__primary {
+      background: $btn__primary;
+      color: $white;
+      &:hover {
+        background: linear-gradient(17deg, #0066b3 0%, #041a35 100%);
+      }
+    }
+    button.btn__secundary {
+      background: $btn__secundary;
+      color: $primary;
+      &:hover {
+        background: linear-gradient(172deg, #8dbcf8 0%, #ffffff 100%);
+      }
+    }
+  }
+  & div.btn__bg__secundary {
+    transform: rotateX(352deg);
+  }
+  &.staticBtn div[class^='btn__bg__'] > button {
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+
+.buttons__social__media {
+  div {
+    border-radius: 1.4rem;
+    max-width: 300px;
+    padding: 0 1.2rem;
+    width: 100%;
+
+    @media screen and (max-width: 576px) {
+      max-width: 230px;
+    }
+    div {
+      border-radius: 1.4rem;
+      margin: auto;
+      max-width: 300px;
+      padding: 1.2rem 3.5rem;
+      transition: background-color 0.8s ease;
+      @media screen and (max-width: 576px) {
+        padding: 1.2rem 2.2rem;
+      }
+
+      p {
+        color: $white;
+        font-size: 1.5rem;
+        @media screen and (max-width: 576px) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &.btn__wsp {
+      background-color: #429700;
+      &:hover div {
+        background-color: #429700;
+      }
+      div {
+        background-color: #5bb445;
+      }
+    }
+    &.btn__fb {
+      background-color: #005997;
+      margin-top: 1rem;
+      &:hover div {
+        background-color: #005997;
+      }
+
+      div {
+        background-color: #1370c2;
+      }
+    }
+  }
+}

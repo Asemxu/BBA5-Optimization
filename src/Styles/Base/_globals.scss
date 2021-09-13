@@ -1,0 +1,183 @@
+/* __________________________________________  */
+/* --------------- TITLES GILDED -------------  */
+/* __________________________________________  */
+
+.parent__title__gilded {
+  height: 100%;
+  margin: 1.2rem auto;
+  max-height: 350px;
+  perspective: 100px;
+  position: relative;
+  width: 100%;
+  .bg__title__gilded {
+    background: $gilded__2;
+    border-radius: $border_radius_btn;
+    max-width: 340px;
+    border: 4px solid $white;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(354deg);
+    @media screen and (max-width: 412px) {
+      max-width: 315px;
+    }
+    @media screen and (max-width: 360px) {
+      max-width: 310px;
+    }
+    @media screen and (max-width: 350px) {
+      max-width: 225px;
+    }
+
+    div {
+      border-radius: $border_radius_btn;
+      border: 0;
+      padding: 0.6rem;
+      margin: auto;
+      transform-style: preserve-3d;
+      width: 100%;
+      grid-template-columns: 1fr;
+      min-height: 5rem;
+    }
+  }
+  p {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    max-width: 278px;
+    margin: auto;
+    color: $white;
+    font-family: $font__extraBold;
+    font-size: 1rem;
+    font-weight: bold;
+    @media screen and (max-width: 992px) {
+      left: 8rem;
+    }
+    @media screen and (max-width: 576px) {
+      left: 7rem;
+    }
+    @media screen and (max-width: 460px) {
+      left: 6rem;
+    }
+    @media screen and (max-width: 415px) {
+      left: 5rem;
+    }
+    @media screen and (max-width: 380px) {
+      left: 3rem;
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 350px) {
+      max-width: 190px;
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 350px) {
+      left: 4rem;
+    }
+    @media screen and (max-width: 280px) {
+      left: 3rem;
+    }
+  }
+  &.title__gilded__md {
+    max-width: 275px;
+    margin: 2rem auto;
+    .bg__title__gilded {
+      div {
+        min-height: 3rem;
+        @media screen and (max-width: 320px) {
+          min-height: 2.3rem;
+        }
+      }
+    }
+    p {
+      left: 2rem;
+      font-size: 1.5rem;
+      @media screen and (max-width: 350px) {
+        left: 3rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/* __________________________________________  */
+/* --------------- TITLES SIZES -------------  */
+/* __________________________________________  */
+.title__bg {
+  font-size: 2rem;
+  font-family: $font__extraBold;
+  @media screen and (max-width: 350px) {
+    font-size: 1.4rem;
+  }
+}
+
+.title__md {
+  font-size: 1.8rem;
+  font-family: $font__extraBold;
+  @media screen and (max-width: 552px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 1.2rem;
+  }
+}
+
+/* __________________________________________  */
+/* --------------- ALIGN TITLES -------------  */
+/* __________________________________________  */
+.text__justify {
+  text-align: justify;
+}
+.text__left {
+  text-align: left;
+}
+
+/* __________________________________________  */
+/* --------------- BACKGROUNDS -------------  */
+/* __________________________________________  */
+.bg__light {
+  background: url('../../Images/Decorations/Aditionals/light_2.webp') center
+    center / contain no-repeat;
+}
+
+.bg__light2 {
+  background: url('../../Images/Decorations/Aditionals/light_3.webp') center
+    center / contain no-repeat;
+}
+.bg__glitter {
+  background: url('../../Images/Decorations/Aditionals/bgResplandor.webp') center
+    center / contain no-repeat;
+}
+
+/* __________________________________________  */
+/* --------------- TEXT COLORS -------------  */
+/* __________________________________________  */
+.text__white {
+  color: $white;
+}
+.text__cyan {
+  color: $cyan;
+}
+
+.text__grayDark {
+  color: $gray__dark;
+}
+.text__primary {
+  color: $primary;
+}
+.text__yellow {
+  color: $yellow;
+}
+.text__yellow__300 {
+  color: $yellow__300;
+}
+
+/* __________________________________________  */
+/* --------------- POSITIONS -------------  */
+/* __________________________________________  */
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}

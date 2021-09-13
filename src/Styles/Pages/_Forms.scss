@@ -1,0 +1,207 @@
+form[class^='content__form'] {
+  padding: 1.5rem 0rem;
+  @media (max-width: 992px) {
+    padding: 1.5rem 2rem;
+  }
+  @media (max-width: 576px) {
+    padding: 1.5rem 2rem;
+  }
+}
+.content__form__passs__recovery {
+  max-width: 330px;
+  margin: auto;
+  width: 100%;
+}
+
+form[class^='content__form'] input,
+form[class^='content__form'] select,
+select {
+  border-radius: 10px;
+  border: none;
+  font-family: $font__extraBold;
+  font-size: 0.9em;
+  padding: 12px 1rem;
+  outline: none;
+}
+
+.select__cities > div {
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 8px !important;
+  .css-1wa3eu0-placeholder {
+    color: #212529;
+  }
+}
+
+form[class^='content__form'] .content__input input.form-control-lg {
+  font-size: 1.1rem;
+}
+form[class^='content__form'] input::placeholder {
+  color: $gray;
+}
+form[class^='content__form'] .content__input,
+form[class^='content__form'] .content__checkbox {
+  margin-bottom: 12px;
+}
+form[class^='content__form'] .content__input.col__2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+form[class^='content__form'] .content__input > .col__3 {
+  grid-template-columns: 5rem 1fr 1fr;
+  &.select__2 {
+    grid-template-columns: 1fr 1fr 7rem;
+    @media screen and (max-width: 455px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 455px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+form[class^='content__form'] .input__pass {
+  position: relative;
+}
+form[class^='content__form'] .input__pass input {
+  padding-right: 3.3rem;
+}
+
+form[class^='content__form'] .input__pass i {
+  font-size: 1.5rem;
+  color: $gray;
+  cursor: pointer;
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+}
+
+form[class^='content__form'] .label {
+  color: $white;
+  font-family: $font__extraBold;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  @media screen and (max-width: 350px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+form[class^='content__form'] .content__checkbox {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 30px 1fr;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 2.3rem 1fr;
+    gap: 10px;
+  }
+  @media screen and (max-width: 555px) {
+    grid-template-columns: 3.5rem 1fr;
+    gap: 10px;
+  }
+}
+form[class^='content__form'] .content__checkbox p {
+  font-family: $font__extraBold;
+  color: $white;
+  font-size: 0.9em;
+  display: inline-block;
+  @media screen and (max-width: 768px) {
+    font-size: 0.8em;
+  }
+}
+
+form[class^='content__form'] button.link,
+button.link {
+  background-color: transparent;
+  border: 0;
+  color: $white;
+  font-size: 1em;
+  font-family: $font__extraBold;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline solid $white 3px;
+  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+  &.link__custom {
+    display: contents;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-decoration: underline solid $white 1.4px;
+  }
+}
+
+form[class^='content__form'] .content_enlace button.link,
+.content_enlace button.link {
+  font-size: 1.3rem;
+  @media screen and (max-width: 350px) {
+    font-size: 1.2rem;
+  }
+}
+
+button.link.link__md {
+  font-size: 1.2rem;
+}
+a:hover {
+  color: $yellow;
+}
+form[class^='content__form'] .content__checkbox input[type='checkbox'] {
+  transform: scale(1.5);
+}
+form[class^='content__form'] .content__checkbox input[type='checkbox'] {
+  width: 20px;
+  height: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  visibility: hidden;
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+form[class^='content__form'] .content__checkbox input[type='checkbox']:after {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+  content: ' ';
+  display: inline-block;
+  height: 14px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  visibility: visible;
+  width: 14px;
+}
+form[class^='content__form']
+  .content__checkbox
+  input[type='checkbox']:checked:after {
+  content: '\2714';
+  padding: -5px;
+  font-weight: bold;
+}
+
+/* LOADER */
+.donutSpinner {
+  display: inline-block;
+  border: 8px solid #ffffff9e;
+  border-left-color: $cyan;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  animation: donut-spin 1.2s linear infinite;
+}
+
+@keyframes donut-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+input.form-control-lg {
+  font-size: 1.1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+.personajes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  place-items: center;
+  margin-bottom: 2rem;
+  background: url('../../Images/Decorations/Aditionals/logo_pelicula.webp'),
+    url('../../Images/Decorations/Aditionals/light_2.webp');
+  background-position: center;
+  background-size: 6.5em, contain;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+.personaje {
+  width: 140px;
+  height: 145px;
+  padding: 10px;
+  background: linear-gradient(
+    293.88deg,
+    #e28f26 3.85%,
+    #fff56d 38.85%,
+    #e4a025 58.14%,
+    #fff56d 72.55%,
+    #ba771d 99.19%
+  );
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  &.activated {
+    background: $white;
+  }
+  &-image {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(17deg, #0066b3 0%, #041a35 100%);
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    );
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    img {
+      width: 6rem;
+      height: 6.5rem;
+      object-fit: contain;
+      margin: 0px auto;
+      margin-top: 1.9rem;
+    }
+  }
+}

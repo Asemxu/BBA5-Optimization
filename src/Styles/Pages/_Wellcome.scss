@@ -1,0 +1,31 @@
+.wellcome {
+  &-content {
+    background: #fff;
+    text-align: center;
+    margin: 6em 3.6em;
+    margin-bottom: 4em;
+    border-radius: 25px;
+    padding: 0px 3em;
+
+    @media screen and (max-width: 768px) {
+      margin: 6em 1.6em;
+      margin-bottom: 4em;
+    }
+    img {
+      margin-top: -5em;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $gray__dark;
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
+    .parent__btn__bg__secundary {
+      margin-bottom: -40px !important;
+    }
+  }
+  div[class^='parent__btn__bg__'] {
+    margin: 0px auto;
+  }
+}

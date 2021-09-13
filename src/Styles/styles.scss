@@ -1,0 +1,35 @@
+/* __________________________________________  */
+/* -------------------- BASES ----------------  */
+/* __________________________________________  */
+
+@import './Base/fonts';
+@import './Base/settings';
+@import './Base/base';
+@import './Base/globals';
+
+/* __________________________________________  */
+/* ----------- GLOBAL COMPONENTS -----------  */
+/* __________________________________________  */
+@import './Components/Buttons';
+@import './Components/Header';
+@import './Components/Modals';
+@import './Components/Message';
+
+/* __________________________________________  */
+/* ----------- PAGES -------------------------  */
+/* __________________________________________  */
+@import './Pages/Forms';
+@import './Pages/Wellcome';
+@import './Pages/Ranking';
+@import './Pages/Products';
+@import './Pages/RaffleAwards';
+@import './Pages/Ballots';
+@import './Pages/pageCharacter';
+@import './Pages/Avatars';
+@import './Pages/Instructions';
+@import './Pages/Legacy';
+
+/* __________________________________________  */
+/* ----------- GAME -------------------------  */
+/* __________________________________________  */
+@import './Game/Game';
